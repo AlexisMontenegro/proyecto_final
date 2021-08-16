@@ -8,6 +8,7 @@ body{
     background-color: #fefae0;
     width: 100%;
 }
+
 /*menu*/
 .imglogo{
     height: 80px;
@@ -70,14 +71,14 @@ nav ul{
     font-size: 30px;
     margin-bottom: 22px;
     text-align: center;
-
+    font-family: Verdana, Tahoma, sans-serif;
 }
 .main-text p{
     font-size: 21px;
     margin-bottom: 22px;
-    font-family: serif;
-    padding-left: 90px;
-    padding-right: 90px;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: justify;
 }
 .imgsection{
@@ -91,6 +92,7 @@ div .imgsection{
 
 .section-text{
     margin: 45px 50px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-around; 
 }
@@ -102,38 +104,54 @@ article:hover{
     color: rgb(100, 188, 194);
     font-size: 1.75rem;
 }
+.section-text article img{
+    margin-left: 50%;
+    margin-bottom: 40px;
+}
 
 .section-text article h3{
     font-size: 26px;
     text-align: center;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 .section-text article p{
-    font-size: 19px;
+    font-size: 16px;
     text-align: justify;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Helvetica, sans-serif;
 }
-
+.imgPrincipal{
+    width: 450px;
+    height: 400px;
+    margin-top: 25px;
+    padding-top: 16px;
+    
+}
 
 /*footer*/
 footer{
     bottom: 0px;
-    font-size: 17px;
     color: rgb(170, 190, 54);
-    background-color: #354f52;
-    width: 100%;
+    background-color: #354f52;  
 }
-
 .imgredes{
     height: 30px;
     width: 30px;
+    margin-left: 50px;
 }
 footer p{
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 10px;
 }
 .footer-redes{
     text-align: center;
+    padding: 10px;
 }
+
+
 #galeria{
     display: grid;
     grid-template-columns:repeat(4, 2fr);

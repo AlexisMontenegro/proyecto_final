@@ -9,7 +9,7 @@ body{
     width: 100%;
 }
 
-/*menu*/
+/*menu*/                                                                     /* PAGINA PRINCIPAL */
 .imglogo{
     height: 80px;
     width: 120px;
@@ -44,7 +44,7 @@ nav ul{
     justify-content: space-evenly;
 }
 
-/*banner*/
+/*  PAGINA PRINCIPAL *//*banner*/
 .banner-principal{
     width: 100%;
     height: 450px;
@@ -62,7 +62,7 @@ nav ul{
     color: #2a2f30;
 }
 
-/*contenido*/
+/* PAGINA PRINCIPAL *//*contenido*/
 .main-text{
     padding: 45px 10px 5px 10px;
     background-color: #e9edc9;
@@ -102,8 +102,7 @@ div .imgsection{
 }
 article:hover{
     transform: scale(1.15);
-    color: rgb(100, 188, 194);
-    font-size: 1.75rem;
+    color: rgb(20, 73, 77);
 }
 .section-text article img{
     margin-left: 50%;
@@ -161,7 +160,7 @@ article:hover{
     height: 100%;
 }
 
-/*footer*/
+/*footer*/                                                                      /* FOOTER */
 footer{
     bottom: 0px;
     color: rgb(170, 190, 54);
@@ -184,7 +183,7 @@ footer p{
     padding: 10px;
 }
 
-/*pag productos*/                                           /*   PAGINA PRODUCTOS    */
+/*pag productos*/                                                       /*   PAGINA PRODUCTOS    */
 #galeria{
     display: grid;
     grid-template-columns:repeat(4, 2fr);
@@ -218,23 +217,25 @@ footer p{
     padding-right: 100px;
 }
 
-                                      /*PAGINA HISTORIA*/
+                                                                              /* PAGINA HISTORIA */
 /*Quienes Somos*/
 .historia_titulo{
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 25px;
+    margin-bottom: 35px;
     text-align: center;
 }
 hr{
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 .historia_container{
     display: flex;
     width: 85%;
     margin: auto;
     padding: 25px;
+    margin-bottom: 35px;
 }
 .historia_contenido{
     justify-content: space-between;
@@ -244,11 +245,26 @@ hr{
 .historia_contenido h2{
     font-family: sans-serif;
     font-size: 2rem;
+    margin-bottom: 15px;
 }
 .historia_contenido p{
     font-size: 1rem;
     font-family:cursive;
     text-align: justify;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+}
+.boton{
+    padding: 20px;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.boton:hover{
+    cursor: pointer;
+    border-color:rgba(5, 160, 56, 0.781);
 }
 .historia_container_img{
     display: grid;
@@ -257,7 +273,7 @@ hr{
     margin: auto;
     padding-top: 25px;
     padding-bottom: 24px;
-    background-color: rgb(21, 24, 24);
+    background-color: rgba(18, 22, 24, 0.6)
 }
 .historia_imagenes{
     width: 100%;
@@ -270,6 +286,52 @@ hr{
     width: 100%;
     height: 100%;
 }
+.historia_banner{
+    width: 100%;
+    height: 350px;
+    animation: banner 8s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+@keyframes banner{
+    0%, 50%{
+        background-image: url(./img/banner2.jpg);
+    }
+    50%, 100%{
+        background-image: url(./img/invernadero2.jpg);
+    }
+}
+.banner_img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.banner_text{
+    z-index: 1;
+    text-align: center;
+}
+.banner_text h3{
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.banner_text p{
+    color: #c7c7c7;
+    letter-spacing: 1.5px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
 .section1{
     margin: 50px 200px 10px 200px;
     text-align: center;
@@ -313,8 +375,7 @@ hr{
     }    
 }
 
-/*pag hidroponia*/
-
+/*pag hidroponia*/                                                      /*  PAGINA HIDROPONIA   */
 .main-hidroponia{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -364,31 +425,68 @@ hr{
     font-weight:bold;
 }
 
-/*pag comentarios*/
+/*pag comentarios*/                                                     /*  PAGINA COMENTARIOS  */
+.comentarios_container{
+    display: grid;
+    grid-template-columns: 50% 30%;
+    width: 100%;
+}
+form{
+    width: 500px;
+    margin:auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #84a98c;
+    border-radius: 10px;    
+}
+form h1{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #354f52;
+    margin-bottom: 15px;
+    text-align: center;
+}
+form p{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: #495057;
+    text-align:center;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+textarea{
+    min-height: 100px;
+    max-height: 150px;
+    max-width: 100%;
+}
+#button{
+    background-color: #cad2c5;
+    color: #101314;
+    padding: 10px;
+}
+#button:hover{
+    cursor: pointer;
+    background-color: #52796f;      
+}
+
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+}
 
 .imgcontacto img{
     height: 350px;
     width: 450px;
 }
 
-.comentariocon{
-    display: grid;
-    grid-template-areas: "comentariocon comentariocon"
-                         " texto texto"
-                         " imgcomentario comentarios";
-    grid-template-columns: 50% 50%; 
-    grid-template-rows: 100px 300px;               
-}
-.comentariocon{
-    grid-area: comentariocon;
-}
-.textocomentario{
-    grid-area: texto;
-}
-.imgcontacto{
-    grid-area: imgcomentario;
-}
-.comentarios{
-    grid-area: comentarios;
-}
 

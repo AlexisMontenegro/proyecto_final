@@ -25,8 +25,8 @@ nav ul li a{
     padding-top: 24px;
 }
 a:hover{
-    border-top: 3px solid #9ACD32;
-    color: #9ACD32;
+    border-top: 3px solid #2dadf7;
+    color: #2dadf7;
 }
 header nav{
     width: 70%;
@@ -491,6 +491,7 @@ hr{
     font-family: sans-serif;
     font-size: 16px;
 }
+/*media queries iphone*/
 @media only screen and (min-width:360px) and (max-width:767px){
     .historia_titulo{
         font-size: 1.2rem;
@@ -820,9 +821,6 @@ textarea{
 
 /* media queries iphone*/
 @media only screen and (min-width:360px) and (max-width:767px){
-    body{
-        background-color: #9ACD32;
-    }
     .comentarios_container{
         display: grid;
         grid-template-columns: 100%;
@@ -879,9 +877,6 @@ textarea{
 }
 /*media queries tablets*/
 @media only screen and (min-width:768px) and (max-width:1020px){
-    body{
-        background-color: #3778c2;
-    }
     .comentarios_container{
         display: grid;
         justify-self: center;

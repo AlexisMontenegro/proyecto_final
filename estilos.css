@@ -18,13 +18,14 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    font-size: 21px;
-    font-family: sans-serif;
+    font-size: 1.7rem;
+    font-family:sans-serif;
     color: black;
+    font-weight: bold;
     padding-top: 24px;
 }
 a:hover{
-    border-top: 6px solid #9ACD32;
+    border-top: 3px solid #9ACD32;
     color: #9ACD32;
 }
 header nav{
@@ -42,6 +43,36 @@ nav ul{
     display: flex;
     justify-content: space-evenly;
 }
+/*media queries iphone*/
+@media only screen and (min-width:360px) and (max-width:767px){
+    .imglogo{
+        height: 50px;
+        width: 80px;
+    }
+    nav ul li a{
+        font-size: .5rem;
+    }
+    header{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/*media queries tablet*/
+@media only screen and (min-width:768px) and (max-width:1020px){
+    .imglogo{
+        height: 60px;
+        width: 100px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+}
 
 /*  PAGINA PRINCIPAL *//*banner*/
 .banner-principal{
@@ -55,11 +86,11 @@ nav ul{
     align-items: center;
     object-fit: cover;
 }
-.banner-principal h1{
+/* .banner-principal h1{
     font-size: 50px;
     font-family:serif;
     color: #2a2f30;
-}
+} */
 
 /* PAGINA PRINCIPAL *//*contenido*/
 .main-text{
@@ -84,15 +115,6 @@ nav ul{
     padding-right: 10%;
     text-align: justify;
 }
-.imgsection{
-    height: 250px;
-    width: 350px;
-}
-div .imgsection{
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
 .section-text{
     margin: 45px 50px;
     padding-bottom: 20px;
@@ -112,7 +134,7 @@ article:hover{
 }
 
 .section-text article h2{
-    font-size: 26px;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif
@@ -162,6 +184,88 @@ article:hover{
 }
 .imgPrincipal:hover .overlay{
     height: 100%;
+}
+/*media queries iphone*/
+@media only screen and (min-width:360px) and (max-width:767px){
+    .banner-principal{
+        height: 200px;
+        background-image: url(./img/1.jpg) ;
+        background-size: 100% 150%;
+    } 
+    .main-text h1{
+        font-size: 1.2rem;
+    }
+    .main-text p{
+        font-size: .9rem;
+    }
+    .section-text{
+        margin: 5px;
+        padding-bottom:  20px;
+        display: flex;
+        justify-content: space-around; 
+    } 
+    .section-text article{
+        width: 50%;
+    }
+      .section-text article h2{
+        font-size: .9rem;
+        margin-bottom: 20px;
+    }
+    .section-text article p{
+        font-size: .8rem;
+        padding: 10px;
+        /* text-align: justify; */
+        /* font-family: sans-serif; */
+        word-spacing: .5px;
+        letter-spacing: .5px;
+    }
+    .contenedorImg .imgPrincipal{
+        width: 33%;
+        /* position: relative; */
+        height: 150px;
+        /* margin-bottom: 5px; */
+    }
+    .overlay h3{
+        color: #000000;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: .5rem;
+        /* text-align: center; */
+    }
+}
+/*media queries tablets*/
+@media only screen and (min-width:768px) and (max-width:1020px){
+    .banner-principal{
+        height: 250px;
+
+    } 
+    .main-text h1{
+        font-size: 2rem;
+    }
+    .main-text p{
+        font-size: 1.1rem;
+    }
+    .section-text article{
+        width: 50%;
+    }
+      .section-text article h2{
+        font-size: 1.5rem;
+    }
+    .section-text article p{
+        font-size: 1rem;
+        padding: 20px;
+        word-spacing: .9px;
+        letter-spacing: .9px;
+    }
+    .contenedorImg .imgPrincipal{
+        width: 30%;
+        height: 250px;
+    }
+    .overlay h3{
+        color: #202020;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+    }
 }
 
 /*footer*/                                                                      /* FOOTER */
@@ -227,6 +331,31 @@ footer p{
     padding-left: 15%;
     padding-right: 15%;
     margin-top: 20px;
+}
+/*media queries iphone*/
+@media only screen and (min-width:360px) and (max-width:767px){
+    .section-galeria h1{
+        font-size: 1.2rem;
+    }
+    .section-galeria p{
+        font-size: 1rem;
+        line-height: 1.5rem;  
+    }
+    #galeria{ 
+        grid-template-columns:repeat(2, 2fr); 
+        margin-top: 20%;
+        margin-bottom: 40%; 
+    }
+}
+/*media queries tablets*/
+@media only screen and (min-width:768px) and (max-width:1020px){
+    .section-galeria h1{
+        font-size: 2rem;
+    }
+    .section-galeria p{
+        font-size: 1.5rem;
+        line-height: 2rem;  
+    }
 }
 
                                                                               /* PAGINA HISTORIA */
@@ -413,6 +542,7 @@ hr{
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    margin-bottom: 35px;
 }
 .hidroponia__img{
     height: 250px;
@@ -438,8 +568,10 @@ hr{
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
-    justify-content:space-around;
-    margin-bottom: 25px;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-bottom: 5px;
+    height: 600px;
 }
 .hidroponia_text{
     width: 20%;
@@ -454,6 +586,10 @@ hr{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
     font-weight:bold;
+}
+/*medias queries iphone*/
+@media only screen and (min-width:360px) and (max-width:767px){
+
 }
 
 /*comentarios*/                                                     /*  PAGINA CONTACTO  */
@@ -474,7 +610,7 @@ form{
 }
 form h1{
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 2.2rem;
     color: #354f52;
     margin-bottom: 15px;
     text-align: center;
@@ -491,8 +627,8 @@ input, textarea{
     width: 100%;
     margin-bottom: 25px;
     padding: 5px;
-    font-size: 16px;
-    border: none;
+    font-size: 1rem;
+    border: none; /*ver que funcion cumple*/
     border-radius: 7px;
     font-weight: bold;
 }
@@ -510,13 +646,6 @@ textarea{
     cursor: pointer;
     background-color: #52796f;      
 }
-
-@media (max-width:480px) {
-    form{
-        width: 100%;
-    }
-}
-
 .contacto_inf{
     width: 500px;
     margin: auto;
@@ -539,4 +668,111 @@ textarea{
     border: none;
 }
 
-
+/* media queries iphone*/
+@media only screen and (min-width:360px) and (max-width:767px){
+    body{
+        background-color: #9ACD32;
+    }
+    .comentarios_container{
+        display: grid;
+        grid-template-columns: 100%;
+        /* margin-bottom: 35px; */
+        /* margin-top: 80px; */
+    }
+    form{
+        width: 350px;
+        margin:auto;
+        padding: 10px 20px;
+        margin-top: 20px;
+        /* background: #84a98c; */
+        border-radius: 10px;    
+    }
+    form h1{
+        /* font-family: sans-serif; */
+        font-size: 1rem;
+        /* color: #354f52; */
+        /* margin-bottom: 15px; */
+        /* text-align: center; */
+    }
+    form p{
+        /* font-family: sans-serif; */
+        font-size: .8rem;
+        /* color: #495057; */
+        /* text-align:center; */
+        /* letter-spacing: 2px; */
+        /* margin-bottom: 35px; */
+    }
+    input, textarea{
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 5px;
+        font-size: .6rem;
+        /* border: none; */
+        /* border-radius: 7px; */
+        /* font-weight: bold; */
+    }
+    .contacto_inf{
+        width: auto;
+        /* margin: auto; */
+        padding: 20px;
+    }
+    .contacto_inf h3{
+        /* font-family: sans-serif; */
+        font-size: 1rem;
+        /* margin-bottom: 15px; */
+    }
+    .contacto_inf p{
+        /* font-family: sans-serif; */
+        font-size: .8rem;
+        margin-bottom: 10px;
+    }
+}
+/*media queries iphad*/
+@media only screen and (min-width:768px) and (max-width:1020px){
+    body{
+        background-color: #3778c2;
+    }
+    .comentarios_container{
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 50% 25%;
+        width: 100%;
+        margin-bottom: 35px;
+        margin-top: 80px;
+    }
+    form{
+        width: 400px;
+        margin:auto;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+    form h1{
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    form p{
+        font-size: 1.2rem;
+        text-align:center;
+        letter-spacing: 2px;
+    }
+    input, textarea{
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 5px;
+        font-size: 1rem;
+        border: none;
+        font-weight: bold;
+    }
+    .contacto_inf{
+        width: auto;    
+        padding: 20%;
+    }
+    .contacto_inf h3{
+        font-size: 1.6rem;
+        
+    }
+    .contacto_inf p{
+        font-size: 1.1rem;
+    } 
+}

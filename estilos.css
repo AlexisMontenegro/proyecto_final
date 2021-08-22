@@ -82,7 +82,6 @@ nav ul{
     background-image: url(./img/1.jpg) ;
     background-position: right center;
     background-size: 100% 160%;
-    display: flex;
     justify-content: center;
     align-items: center;
     object-fit: cover;
@@ -209,22 +208,20 @@ article:hover{
     .section-text article p{
         font-size: .8rem;
         padding: 10px;
-        /* text-align: justify; */
-        /* font-family: sans-serif; */
         word-spacing: .5px;
         letter-spacing: .5px;
     }
+    .section-text article img{
+        margin-left: -150%;
+    }
     .contenedorImg .imgPrincipal{
         width: 33%;
-        /* position: relative; */
         height: 150px;
-        /* margin-bottom: 5px; */
     }
     .overlay h3{
         color: #000000;
         font-family: Verdana, Tahoma, sans-serif;
         font-size: .5rem;
-        /* text-align: center; */
     }
 }
 /*media queries tablets*/
@@ -509,6 +506,7 @@ hr{
         height: 250px;
     }
     .historia_contenido h2{
+        font-family: cursive;
         font-size: .8rem;
         margin-bottom: 0px;
     }
@@ -824,53 +822,34 @@ textarea{
     .comentarios_container{
         display: grid;
         grid-template-columns: 100%;
-        /* margin-bottom: 35px; */
-        /* margin-top: 80px; */
     }
     form{
         width: 350px;
         margin:auto;
         padding: 10px 20px;
         margin-top: 20px;
-        /* background: #84a98c; */
         border-radius: 10px;    
     }
     form h1{
-        /* font-family: sans-serif; */
         font-size: 1rem;
-        /* color: #354f52; */
-        /* margin-bottom: 15px; */
-        /* text-align: center; */
     }
     form p{
-        /* font-family: sans-serif; */
         font-size: .8rem;
-        /* color: #495057; */
-        /* text-align:center; */
-        /* letter-spacing: 2px; */
-        /* margin-bottom: 35px; */
     }
     input, textarea{
         width: 100%;
         margin-bottom: 25px;
         padding: 5px;
         font-size: .6rem;
-        /* border: none; */
-        /* border-radius: 7px; */
-        /* font-weight: bold; */
     }
     .contacto_inf{
         width: auto;
-        /* margin: auto; */
         padding: 20px;
     }
     .contacto_inf h3{
-        /* font-family: sans-serif; */
         font-size: 1rem;
-        /* margin-bottom: 15px; */
     }
     .contacto_inf p{
-        /* font-family: sans-serif; */
         font-size: .8rem;
         margin-bottom: 10px;
     }
